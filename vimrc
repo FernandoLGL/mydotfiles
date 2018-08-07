@@ -23,6 +23,8 @@ Plugin 'jnurmine/Zenburn'
 Plugin 'mhinz/vim-startify'
 "Auto pairs parentheses and stuff
 Plugin 'jiangmiao/auto-pairs'
+"File tree
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
