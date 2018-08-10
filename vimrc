@@ -25,6 +25,8 @@ Plugin 'mhinz/vim-startify'
 Plugin 'jiangmiao/auto-pairs'
 "File tree
 Plugin 'scrooloose/nerdtree'
+"Jedi Python autocomplete
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
