@@ -1,2 +1,1 @@
-# myvimrc
-My vimrc file
+# My Personal dotfiles
