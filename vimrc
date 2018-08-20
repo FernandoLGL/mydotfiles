@@ -83,7 +83,7 @@ let g:SimpylFold_docstring_preview=1
 "Fold with spacebar instead of typing za
 nnoremap <space> za
 
-"@a and @s
+"My maps
 map <C-Z> @a
 map <C-X> @s
 
