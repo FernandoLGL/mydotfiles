@@ -52,18 +52,26 @@ set scrolloff=5
 "highlight search
 set hlsearch
 set incsearch
+"line numbers
 set nu
 set lbr
-set ai
+"smart indent
 set si
 set bg=dark
 "PEP 8
 set expandtab
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
+set autoindent
 set textwidth=79
 set fileformat=unix
+"End of PEP 8
 color zenburn
+
+"My registers
+let @a = '0i#j' "Comment Python
+let @s = '0xj' "Uncomment Python
 
 " Code folding
 " The line below folds upon line indents. Sometimes thats not good though,
@@ -74,6 +82,10 @@ set foldlevel=99
 let g:SimpylFold_docstring_preview=1
 "Fold with spacebar instead of typing za
 nnoremap <space> za
+
+"@a and @s
+map <C-Z> @a
+map <C-X> @s
 
 set encoding=utf-8
 
