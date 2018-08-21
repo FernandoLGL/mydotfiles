@@ -58,15 +58,11 @@ set lbr
 "smart indent
 set si
 set bg=dark
+
 "PEP 8
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
-set textwidth=79
-set fileformat=unix
+autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4 autoindent textwidth=79 fileformat=unix
 "End of PEP 8
+
 color zenburn
 
 "My registers
