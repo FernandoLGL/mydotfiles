@@ -53,14 +53,17 @@ set scrolloff=5
 set hlsearch
 set incsearch
 "line numbers
-set nu
-set lbr
+set number
+set linebreak
 "smart indent
-set si
+set smartindent
 set bg=dark
 
+set expandtab
+set autoindent
+
 "PEP 8
-autocmd FileType python setlocal expandtab tabstop=4 softtabstop=4 shiftwidth=4 autoindent textwidth=79 fileformat=unix
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 fileformat=unix
 "End of PEP 8
 
 color zenburn
