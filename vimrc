@@ -66,11 +66,12 @@ set autoindent
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 fileformat=unix
 "End of PEP 8
 
-color zenburn
+"My bib LaTeX stuff
+autocmd FileType bib inoremap ,a @article{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>journal<Space>=<Space>"",<Enter>volume<Space>=<Space>"",<Enter>pages<Space>=<Space>"",<Enter>}<Enter><Esc>8kA,<Esc>a
+autocmd FileType bib inoremap ,b @book{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>publisher<Space>=<Space>"",<Enter>}<Enter><Esc>6kA,<Esc>a
+autocmd FileType bib inoremap ,c @incollection{<Enter>author<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>booktitle<Space>=<Space>"",<Enter>editor<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>publisher<Space>=<Space>"",<Enter>}<Enter><Esc>8kA,<Esc>a
 
-"My registers
-let @a = '0i#j' "Comment Python
-let @s = '0xj' "Uncomment Python
+color zenburn
 
 " Code folding
 " The line below folds upon line indents. Sometimes thats not good though,
@@ -83,8 +84,8 @@ let g:SimpylFold_docstring_preview=1
 nnoremap <space> za
 
 "My maps
-map <C-Z> @a
-map <C-X> @s
+map <C-Z> 0i#j
+map <C-X> 0xj
 
 set encoding=utf-8
 
