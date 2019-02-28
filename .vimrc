@@ -13,7 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tmhedberg/simpylfold'
 Plugin 'konfekt/fastfold'
 Plugin 'vim-scripts/indentpython.vim'
-"Plugin 'scrooloose/syntastic' This one makes it too slow if not working  with
+Plugin 'scrooloose/syntastic' "This one makes it too slow if not working  with
 "pure python
 Plugin 'nvie/vim-flake8'
 "Solarized seems good only for GUI
@@ -26,7 +26,7 @@ Plugin 'jiangmiao/auto-pairs'
 "File tree
 Plugin 'scrooloose/nerdtree'
 "Jedi Python autocomplete. Too heavy on standard vim
-" Plugin 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
