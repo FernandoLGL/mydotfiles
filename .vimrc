@@ -85,7 +85,8 @@ nnoremap <space> za
 
 "My maps
 map <C-Z> 0i#j
-map <C-X> 0xj
+map <C-X> 0xr
+nnoremap <F3> :!g++ % -o temp.out; ./temp.out <cr>
 
 set encoding=utf-8
 
