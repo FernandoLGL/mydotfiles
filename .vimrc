@@ -27,6 +27,10 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 "Jedi Python autocomplete. Too heavy on standard vim
 Plugin 'davidhalter/jedi-vim'
+"Vim-doge Documentacao
+Plugin 'kkoomen/vim-doge'
+"onedark.vim tema (não instalei porque faltam alguns passos. Ver depois)
+"Plugin 'joshdick/onedark.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,6 +70,11 @@ set autoindent
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 fileformat=unix
 "End of PEP 8
 
+"C++ autoformatting
+"autocmd BufNewFile,BufRead *.cpp set formatprg=astyle\ -T4pb
+"http://astyle.sourceforge.net/
+"https://stackoverflow.com/questions/2355834/how-can-i-autoformat-indent-c-code-in-vim
+
 "My bib LaTeX stuff
 autocmd FileType bib inoremap ,a @article{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>journal<Space>=<Space>"",<Enter>volume<Space>=<Space>"",<Enter>pages<Space>=<Space>"",<Enter>}<Enter><Esc>8kA,<Esc>i
 autocmd FileType bib inoremap ,b @book{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>publisher<Space>=<Space>"",<Enter>}<Enter><Esc>6kA,<Esc>i
@@ -84,9 +93,9 @@ let g:SimpylFold_docstring_preview=1
 nnoremap <space> za
 
 "My maps
-map <C-Z> 0i#j
-map <C-X> 0xr
-nnoremap <F3> :!g++ % -o temp.out; ./temp.out <cr>
+autocmd FileType python map <C-Z> 0i#j
+autocmd FileType python map <C-X> 0xr
+autocmd BufNewFile,BufRead *.cpp nnoremap <F3> :!g++ % -o temp.out; ./temp.out <cr>
 
 set encoding=utf-8
 
