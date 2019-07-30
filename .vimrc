@@ -31,6 +31,11 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'kkoomen/vim-doge'
 "onedark.vim tema (não instalei porque faltam alguns passos. Ver depois)
 "Plugin 'joshdick/onedark.vim'
+Plugin 'tell-k/vim-autopep8'
+"ANTES: pip install autopep8
+Plugin 'rhysd/vim-clang-format'
+"ANTES: apt-get install clang-format-7 (ver no cache) e mudar lá embaixo o
+"nome do comando
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,6 +73,8 @@ set autoindent
 
 "PEP 8
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 fileformat=unix
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR><Paste> 
+"Plugin above
 "End of PEP 8
 
 "C++ autoformatting
@@ -79,6 +86,13 @@ autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=
 autocmd FileType bib inoremap ,a @article{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>journal<Space>=<Space>"",<Enter>volume<Space>=<Space>"",<Enter>pages<Space>=<Space>"",<Enter>}<Enter><Esc>8kA,<Esc>i
 autocmd FileType bib inoremap ,b @book{<Enter>author<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>publisher<Space>=<Space>"",<Enter>}<Enter><Esc>6kA,<Esc>i
 autocmd FileType bib inoremap ,c @incollection{<Enter>author<Space>=<Space>"",<Enter>title<Space>=<Space>"",<Enter>booktitle<Space>=<Space>"",<Enter>editor<Space>=<Space>"",<Enter>year<Space>=<Space>"",<Enter>publisher<Space>=<Space>"",<Enter>}<Enter><Esc>8kA,<Esc>i
+
+"Vim-doge
+let g:doge_mapping='<F2>'
+let g:doge_doc_standard_python='numpy'
+
+"clang-format
+let g:clang_format#command='clang-format-7'
 
 color zenburn
 
