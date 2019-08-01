@@ -35,6 +35,7 @@ Plug 'segeljakt/vim-silicon'
 "eu tive também que instalar libxcb-render-util0-dev; libxcb-shape0-dev; libxcb-xfixes0-dev
 "Que achei depois de fazer uma busca no cache do apt por xcb render; xcb
 "shape; xcb xfixes
+Plug 'morhetz/gruvbox'
 
 
 call plug#end()

@@ -1,2 +1,8 @@
 set bg=dark
-color zenburn
+"set bg=light
+"color zenburn
+
+colorscheme gruvbox
+
+"True Color
+set termguicolors
