@@ -19,8 +19,8 @@ set autoindent
 " Code folding
 " The line below folds upon line indents. Sometimes thats not good though,
 " thats why I use SimpylFold
-set foldmethod=indent
-set foldlevel=99
+"set foldmethod=indent
+"set foldlevel=99
 
 set encoding=utf-8
 let python_highlight_all=1
