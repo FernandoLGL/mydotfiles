@@ -6,7 +6,9 @@ nnoremap <space> za
 
 autocmd FileType python map <C-Z> 0i#j
 autocmd FileType python map <C-X> 0xr
-autocmd BufNewFile,BufRead *.cpp nnoremap <F3> :!g++ % -o temp.out; ./temp.out <cr>
+autocmd BufNewFile,BufRead *.cpp nnoremap <F3> :!g++ % -pedantic-errors -o temp.out; ./temp.out <cr>
+"-pedantic-errors desabilitar compiler extensions
+"https://www.learncpp.com/cpp-tutorial/configuring-your-compiler-compiler-extensions/
 
 "Pep8 plugin
 autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR><Paste> 
