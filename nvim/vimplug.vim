@@ -22,6 +22,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'jnurmine/Zenburn'
 ":h startify
 ":h startify-faq
+":h g:startify_custom_header
 Plug 'mhinz/vim-startify'
 "Auto pairs parentheses and stuff
 Plug 'jiangmiao/auto-pairs'
