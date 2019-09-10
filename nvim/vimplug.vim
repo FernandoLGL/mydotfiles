@@ -36,6 +36,8 @@ Plug 'segeljakt/vim-silicon'
 "Que achei depois de fazer uma busca no cache do apt por xcb render; xcb
 "shape; xcb xfixes
 Plug 'morhetz/gruvbox'
-
-
+"Emmet para Vim
+Plug 'mattn/emmet-vim'
+"lightline, para colocar uma statusbar bonita
+Plug 'itchyny/lightline.vim'
 call plug#end()
