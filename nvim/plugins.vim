@@ -1,5 +1,6 @@
 "Vim-doge
 let g:doge_doc_standard_python='numpy'
+let g:doge_doc_standard_cpp='doxygen'
 
 "clang-format
 let g:clang_format#command='clang-format-7'
