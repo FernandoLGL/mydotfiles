@@ -1,6 +1,9 @@
 [global_config]
   always_split_with_profile = True
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   title_font = Source Code Pro Heavy 18
+  title_receive_bg_color = "#75507b"
+  title_transmit_bg_color = "#3465a4"
 [keybindings]
 [layouts]
   [[default]]
