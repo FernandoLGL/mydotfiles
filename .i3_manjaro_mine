@@ -146,6 +146,14 @@ bindsym $mod+Ctrl+h workspace prev
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
 
+# Unicode characters
+set $ws1 "Ⅰ. ⛴" # Browser 
+set $ws2 "Ⅱ. ❐" # Terminals
+set $ws3 "Ⅲ. ∑" # Code
+set $ws4 "Ⅳ. ⛕" # Git
+set $ws5 "Ⅴ. ❓" # Random
+
+# normal 
 set $ws1 "Browser"
 set $ws2 "Terminals"
 set $ws3 "Code"
