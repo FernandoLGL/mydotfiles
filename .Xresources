@@ -54,11 +54,12 @@ XTerm*selectToClipboard: true
 *color7:                          #d8d8d8
 *color15:                         #f8f8f8
 
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: Maia-Cursor
 Xcursor.size:                     0
 
 ! URxvt.font:			xft:Hack:style=Regular
-URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
+!URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
+URxvt.font:                       xft:TerminessTTFNerdFontMono:size=14
 
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -66,12 +67,12 @@ URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [80]#222D31
+URxvt.background:                 [65]#222D31
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
 URxvt*background:                 black
-URxvt*foreground:                 grey
+URxvt*foreground:                 white
 URxvt*saveLines:                  5000
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
@@ -150,11 +151,11 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! URxvt*troughColor:                color
 ! URxvt*highlightColor:             color
 ! URxvt*highlightTextColor:         color
-URxvt*cursorColor:                magenta
+URxvt*cursorColor:                green
 ! URxvt*cursorColor2:               color
 ! URxvt*pointerColor:               color
 ! URxvt*pointerColor2:              color
-! URxvt*borderColor:                color
+! URxvt*borderColor:                #556e50
 ! URxvt*iconFile:                   file
 ! URxvt*font:                       fontname
 ! URxvt*boldFont:                   fontname
@@ -173,9 +174,9 @@ URxvt*cursorColor:                magenta
 ! URxvt*transient-for:              windowid
 ! URxvt*override-redirect:          boolean
 ! URxvt*hold:                       boolean
-! URxvt*externalBorder:             number
-! URxvt*internalBorder:             number
-! URxvt*borderLess:                 true
+!URxvt*externalBorder:             1
+!URxvt*internalBorder:             1
+!URxvt*borderLess:                 true
 ! URxvt*lineSpace:                  number
 ! URxvt*letterSpace:                number
 ! URxvt*skipBuiltinGlyphs:          boolean
