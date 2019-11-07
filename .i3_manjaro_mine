@@ -282,7 +282,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec --no-startup-id start_conky_live_maia
+# exec --no-startup-id start_conky_live_maia
 # exec --no-startup-id blueman
 exec --no-startup-id clipit
 exec --no-startup-id desktop-items
@@ -327,11 +327,12 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Variaveis de cor
-set $bg-color #ff5ce9
-set $inactive-bg-color #ffc4f7
-set $text-color #7083ff
-set $inactive-text-color #bdc6ff
-set $urgent-bg-color #ff0000
+set $bg-color #000000
+set $text-color #449167
+set $focused-bg-color #303030
+set $urgent-bg-color #cc000a
+set $separator #007d2c
+set $statusline #b0ffcc
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
@@ -348,16 +349,16 @@ bar {
 #   font xft:URWGothic-Book 11
 	strip_workspace_numbers yes
     colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
+        background $bg-color
+        statusline $statusline
+        separator  $separator
 
 #                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
+        focused_workspace  $focused-bg-color $focused-bg-color $text-color
+        active_workspace   $bg-color $bg-color $text-color
+        inactive_workspace $bg-color $bg-color $text-color
         binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+        urgent_workspace   $bg-color $urgent-bg-color $text-color
     }
 
 #    DEFAULT
@@ -379,25 +380,25 @@ bar {
 bindsym $mod+m bar mode toggle
 
 
-# DEFAULT (I like it)
+# DEFAULT
 ## class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-
-  client.background       #2B2C2B
+#  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+#  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+#  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+#  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+#  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+#
+#  client.background       #2B2C2B
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-#  client.focused          $bg-color bg-color $text-color #FDF6E3
-#  client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #454948
-#  client.unfocused 	  $inactive-bg-color $inactive-bg-color $inactive-text-color #454948
-#  client.urgent           $urgent-bg-color $urgent-bg-color $text-color #268BD2
-#  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-#
-#  client.background       $bg-color
+  client.focused          $bg-color bg-color $text-color #FDF6E3
+  client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #454948
+  client.unfocused 	  $inactive-bg-color $inactive-bg-color $inactive-text-color #454948
+  client.urgent           $urgent-bg-color $urgent-bg-color $text-color #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+
+  client.background       $bg-color
 
 #############################
 ### settings for i3-gaps: ###
