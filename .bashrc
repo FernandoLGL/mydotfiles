@@ -10,3 +10,9 @@ PATH="$HOME/bin:$PATH"
 
 #my custom one
 export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\h \[$(tput setaf 1)\]\W \[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+
+# Ranger
+VISUAL=vim;
+export VISUAL
+EDITOR=vim;
+export EDITOR
