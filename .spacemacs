@@ -149,9 +149,20 @@ values."
    ;;                            :weight normal
    ;;                            :width normal
    ;;                            :powerline-scale 1.1)
-   dotspacemacs-default-font '("Hack"
-                               :size 17
-                               :weight normal
+
+   ;; FONT FOR WHEN PEOPLE ARE SUPPOSED TO SEE STUFF
+   ;; dotspacemacs-default-font '("Hack"
+   ;;                             :size 16
+   ;;                             :weight normal
+   ;;                             :width normal
+   ;;                             :powerline-scale 1.1)
+
+   ;; I couldn't get Fira Code to work on spacemacs, but I use it on Qt.
+
+   ;; PERSONAL FONT
+   dotspacemacs-default-font '("Terminus"
+                               :size 16
+                               :weight bold
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key
@@ -326,6 +337,10 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq-default helm-make-build-dir "build")
+  (with-eval-after-load 'cc-vars
+    (push '(other . "stroustrup") c-default-style)
+    )
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
