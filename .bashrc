@@ -8,6 +8,9 @@ PATH="$HOME/bin:$PATH"
 # rainbow
 # export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
+# Need this for alacritty to work properly on Fedora
+export TERMINFO=/usr/share/terminfo
+
 #my custom one
 export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\h \[$(tput setaf 1)\]\W \[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
