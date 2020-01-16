@@ -150,21 +150,13 @@ values."
    ;;                            :width normal
    ;;                            :powerline-scale 1.1)
 
-   ;; FONT FOR WHEN PEOPLE ARE SUPPOSED TO SEE STUFF
-   ;; dotspacemacs-default-font '("Hack"
-   ;;                             :size 16
-   ;;                             :weight normal
-   ;;                             :width normal
-   ;;                             :powerline-scale 1.1)
-
-   ;; I couldn't get Fira Code to work on spacemacs, but I use it on Qt.
-
    ;; PERSONAL FONT
-   dotspacemacs-default-font '("Terminus"
+   dotspacemacs-default-font '("Envy Code R"
                                :size 16
                                :weight bold
                                :width normal
                                :powerline-scale 1.1)
+
    ;; The leader key
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands (M-x) (after pressing on the leader key).
